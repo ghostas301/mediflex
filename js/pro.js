@@ -19,7 +19,7 @@ $(document).ready(()=>{
 			type : 'POST',
 			data : formData,
 			contentType: 'application/json',
-            		//processData: false,
+            		processData: false,
 			success : function(data){
 				console.log(data);
 			},
