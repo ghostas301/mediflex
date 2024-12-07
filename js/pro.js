@@ -18,9 +18,8 @@ $(document).ready(()=>{
 			url : 'php/pro.php',
 			method : 'POST',
 			data : formData,
-			contentType: false,
-            		processData: false,
-			headers: {'Content-Type': 'application/json'},
+			contentType: 'application/json',
+            		//processData: false,
 			success : function(data){
 				console.log(data);
 			},
