@@ -16,7 +16,7 @@ $(document).ready(()=>{
 		formData.append('profile', profile);
 		$.ajax({
 			url : 'php/pro.php',
-			method : 'POST',
+			type : 'POST',
 			data : formData,
 			contentType: 'application/json',
             		//processData: false,
