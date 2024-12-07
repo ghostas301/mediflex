@@ -1,4 +1,5 @@
 <?php
+if($_SERVER['REQUEST_METHOD'] === 'POST'){
 require_once('conn.php');
 extract($_POST);
 $name = $_POST['name'];
@@ -31,4 +32,5 @@ if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_file)) {
 	echo "Une erreur est suevenue, veuillez reessayer plutard!!";
 }
 $conn->close();
+}
 ?>
