@@ -16,10 +16,11 @@ $(document).ready(()=>{
 		formData.append('profile', profile);
 		$.ajax({
 			url : 'php/pro.php',
-			type: 'POST',
+			method : 'POST',
 			data : formData,
 			contentType: false,
-            processData: false,
+            		processData: false,
+			headers: {'Content-Type': 'application/json'},
 			success : function(data){
 				console.log(data);
 			},
