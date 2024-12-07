@@ -20,10 +20,10 @@ $(document).ready(()=>{
 			data : formData,
 			contentType: 'application/json',
             		processData: false,
-			success : function(data){
+			success : (data)=>{
 				console.log(data);
 			},
-			error : function(err){
+			error : (err)=>{
 				console.log(err);
 			}
 		});
