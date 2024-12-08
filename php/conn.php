@@ -1,8 +1,8 @@
 <?php
-$host = getenv('DB_HOST');
-$user = getenv('DB_USER');
-$password = getenv('DB_PASSWORD');
-$dbname = getenv('DB_NAME');
+$host = 'sql309.infinityfree.com';
+$user = 'if0_37856510';
+$password = 'GXybtRjKfb';
+$dbname = 'if0_37856510_domisoins';
 
 // Créer une connexion
 $conn = new mysqli($host, $user, $password, $dbname);
