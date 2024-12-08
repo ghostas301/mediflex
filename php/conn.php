@@ -1,15 +1,17 @@
 <?php
-$host = 'sql309.infinityfree.com';
-$user = 'if0_37856510';
-$password = 'GXybtRjKfb';
-$dbname = 'if0_37856510_domisoins';
+// Paramètres de connexion
+$host = 'sql7.freemysqlhosting.net'; // Par exemple, '192.168.1.100'
+$user = 'sql7750528';
+$password = 'XssqpPSNsd';
+$dbname = 'sql7750528';
 
-// Créer une connexion
+// Créer la connexion
 $conn = new mysqli($host, $user, $password, $dbname);
 
 // Vérifier la connexion
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    die("Échec de la connexion : " . $conn->connect_error);
 }
-echo "Connected successfully";
+echo "Connexion réussie à la base de données !";
+
 ?>
